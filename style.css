@@ -1,0 +1,112 @@
+/* Default styles for all screen sizes */
+.Card h1 {
+    text-align: center;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+  }
+  
+  .contents img {
+    height: 150px;
+    width: 250px;
+    align-self: center;
+    border-radius: 5px;
+    margin: 20px 0px;
+  }
+  
+  .container {
+    flex-wrap: wrap;
+    display: flex;
+    width: 1170px;
+    margin: auto;
+    justify-content: center;
+  }
+  
+  .contents {
+    flex-basis: 50%;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px 0px;
+  }
+  
+  .contents h2 {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px 0px;
+  }
+  
+  .contents p {
+    font-size: 14px;
+    padding: 10px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+  }
+  
+  .contents button {
+    background-color: rgb(8, 8, 8);
+    padding: 10px 25px;
+    color: rgb(255, 136, 0);
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0px;
+    transition: 5px;
+    cursor: pointer;
+  }
+  
+  .contents:hover {
+    box-shadow: 10px 0px 0px 3px lightgrey;
+    background: rgb(8, 8, 8);
+  }
+  
+  .contents:hover h2,
+  .contents:hover p {
+    color: white;
+  }
+  
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .contents:hover button {
+    background-color: rgb(255, 136, 0);
+    color: rgb(8, 8, 8);
+    cursor: pointer;
+  }
+  
+  /* Styles for screen sizes up to 500px */
+  @media screen and (max-width: 500px) {
+    .container {
+      width: 100%;
+      padding: 0px 10px;
+    }
+    
+    .contents {
+      flex-basis: 100%;
+    }
+  }
+  
+  /* Styles for screen sizes up to 798px */
+  @media screen and (max-width: 798px) {
+    .contents img {
+      height: 100px;
+      width: 200px;
+    }
+    
+    .contents h2 {
+      font-size: 20px;
+    }
+    
+    .contents p {
+      font-size: 12px;
+    }
+    
+    .contents button {
+      font-size: 12px;
+    }
+  }
+  
+  /* Styles for screen sizes up to 1024px */
+  @media screen and (max-width: 1024px) {
+    .container {
+      width: 90%;
+    }
+  }
+  
